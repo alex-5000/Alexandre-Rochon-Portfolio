@@ -10,6 +10,14 @@ Site portfolio one-page avec filtres par catégorie, navigation latérale sur de
 - Boutons/catégories menant vers une page dédiée (`category.html`) pour un type de projet.
 - CMS éditable en ligne via **Decap CMS** (`/admin`).
 
+## Déploiement Cloudflare
+
+Pour déployer le site sur Cloudflare, utilisez la commande suivante :
+
+```bash
+npx wrangler deploy
+```
+
 ## CMS simple et sécuritaire
 
 Le site utilise Decap CMS avec `git-gateway`.
