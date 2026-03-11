@@ -77,7 +77,10 @@ function renderProjects() {
 
   container.innerHTML = projects
     .map((project) => {
-      const [mainImage, rightTop, rightBottom] = project.images;
+      const images = project.images.filter(Boolean);
+      const mainImage = images[0];
+      const rightTop = images[1] || mainImage;
+      const rightBottom = images[2] || rightTop;
       return `
       <article class="project-card">
         <div class="project-content">
