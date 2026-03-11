@@ -2,14 +2,14 @@
   "projects": [
     {
       "title": {
-        "fr": "Campagne Atelier Nord",
-        "en": "Atelier Nord Campaign"
+        "fr": "La Dispute du Corps Queer",
+        "en": "s"
       },
       "description": {
-        "fr": "Série visuelle pour une campagne culturelle. blabla",
-        "en": "Visual series for a cultural campaign."
+        "fr": "2025\n\nLa Dispute du Corps Queer détourne une fresque sacrée pour célébrer la puissance transformatrice des identités LGBTQ+ : Cénée, figure mythique réinventée, prend la place du Christ, tandis qu’une sculpture-torse matérialise la transsubstantiation d’un corps queer — un dialogue entre histoire de l’art, théologie et politique qui fissure les récits dominants pour ouvrir un panthéon radicalement inclusif.\n\nAu fil de mes recherches sur les mythes et les identités queer, je me suis attaché·e à la figure de Cénée des Métamorphoses d’Ovide : né·e femme, violé·e par Poséidon, puis métamorphosé·e en homme invulnérable. J’y ai vu la matrice d’un récit de résilience qui entre en résonance avec les luttes contemporaines. Cherchant un cadre visuel apte à amplifier cette histoire, j’ai détourné la fresque renaissance La Dispute du Saint-Sacrement de Raphaël — une scène théologique sur le miracle de la transsubstantiation. En remplaçant le Christ par Cénée, je fais dialoguer deux transformations : celle du pain et du vin en corps sacré et celle d’un corps humain en entité queer. Ce glissement fonde tout le projet.\n",
+        "en": "2025"
       },
-      "category": "branding",
+      "category": "Arts visuels",
       "images": [
         "https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80",
