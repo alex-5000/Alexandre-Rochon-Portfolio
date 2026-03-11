@@ -1,0 +1,51 @@
+{
+  "ui": {
+    "identity": {
+      "fr": "Portfolio artistique",
+      "en": "Artist Portfolio"
+    },
+    "intro": {
+      "fr": "Direction artistique, illustration et projets visuels.",
+      "en": "Art direction, illustration and visual projects."
+    },
+    "allProjects": {
+      "fr": "Tous les projets",
+      "en": "All Projects"
+    },
+    "allCategories": {
+      "fr": "Toutes les catégories",
+      "en": "All categories"
+    },
+    "backToAll": {
+      "fr": "← Retour à tous les projets",
+      "en": "← Back to all projects"
+    },
+    "noProjects": {
+      "fr": "Aucun projet dans cette catégorie pour le moment.",
+      "en": "No projects in this category yet."
+    }
+  },
+  "categories": [
+    {
+      "slug": "branding",
+      "name": {
+        "fr": "Branding",
+        "en": "Branding"
+      }
+    },
+    {
+      "slug": "illustration",
+      "name": {
+        "fr": "Illustration",
+        "en": "Illustration"
+      }
+    },
+    {
+      "slug": "editorial",
+      "name": {
+        "fr": "Éditorial",
+        "en": "Editorial"
+      }
+    }
+  ]
+}

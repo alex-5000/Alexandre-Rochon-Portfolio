@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site settings"
+    files:
+      - label: "Site content"
+        name: "site_content"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "UI"
+            name: "ui"
+            widget: "object"
+            fields:
+              - label: "Identity"
+                name: "identity"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "Intro"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "text" }
+                  - { label: "English", name: "en", widget: "text" }
+              - label: "All Projects"
+                name: "allProjects"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "All Categories"
+                name: "allCategories"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "Back to all"
+                name: "backToAll"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "No Projects"
+                name: "noProjects"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Slug", name: "slug", widget: "string" }
+              - label: "Name"
+                name: "name"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - label: "Project list"
+        name: "project_list"
+        file: "content/projects.json"
+        format: "json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "Français", name: "fr", widget: "text" }
+                  - { label: "English", name: "en", widget: "text" }
+              - { label: "Category slug", name: "category", widget: "string" }
+              - label: "Images (3 URLs)"
+                name: "images"
+                widget: "list"
+                min: 3
+                max: 3
+                field: { label: "Image URL", name: "image", widget: "string" }
