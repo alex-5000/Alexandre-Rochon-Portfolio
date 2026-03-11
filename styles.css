@@ -125,6 +125,11 @@ main {
   grid-template-columns: 2fr 1fr;
   gap: 0.6rem;
   height: clamp(320px, 55vw, 700px);
+  overflow: hidden;
+}
+
+.project-gallery img {
+  display: block;
 }
 
 .project-gallery .left,
@@ -182,6 +187,19 @@ main {
   .project-gallery {
     grid-template-columns: 1fr;
     height: auto;
+  }
+
+  .project-gallery .left,
+  .project-gallery .right img {
+    height: auto;
+  }
+
+  .project-gallery .left {
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-gallery .right img {
+    aspect-ratio: 1 / 1;
   }
 
   .project-gallery .right {
