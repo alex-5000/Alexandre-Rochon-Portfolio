@@ -85,10 +85,16 @@ function renderProjects() {
       <article class="project-card">
         <div class="project-content">
           <div class="project-gallery">
-            <img class="left" src="${mainImage}" alt="${t(project.title)}" loading="lazy" />
+            <div class="gallery-slot left">
+              <img src="${mainImage}" alt="${t(project.title)}" loading="lazy" />
+            </div>
             <div class="right">
-              <img src="${rightTop}" alt="${t(project.title)}" loading="lazy" />
-              <img src="${rightBottom}" alt="${t(project.title)}" loading="lazy" />
+              <div class="gallery-slot">
+                <img src="${rightTop}" alt="${t(project.title)}" loading="lazy" />
+              </div>
+              <div class="gallery-slot">
+                <img src="${rightBottom}" alt="${t(project.title)}" loading="lazy" />
+              </div>
             </div>
           </div>
           <div class="project-description">
