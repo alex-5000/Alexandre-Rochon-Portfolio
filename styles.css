@@ -124,7 +124,13 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
   gap: 0.75rem;
-  height: clamp(320px, 55vw, 700px);
+  height: clamp(320px, 50vw, 620px);
+}
+
+.gallery-slot {
+  border: 1px solid var(--line);
+  overflow: hidden;
+  min-height: 0;
 }
 
 .project-gallery img {
@@ -136,18 +142,10 @@ main {
   background: #e9e5dd;
 }
 
-.project-gallery .left {
-  border: 1px solid var(--line);
-}
-
 .project-gallery .right {
   display: grid;
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
-}
-
-.project-gallery .right img {
-  border: 1px solid var(--line);
 }
 
 .project-description {
@@ -203,7 +201,7 @@ main {
     grid-template-rows: 1fr;
   }
 
-  .project-gallery .right img {
+  .project-gallery .right .gallery-slot {
     aspect-ratio: 1 / 1;
   }
 }
