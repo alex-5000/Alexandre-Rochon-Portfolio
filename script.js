@@ -80,15 +80,19 @@ function renderProjects() {
       const [mainImage, rightTop, rightBottom] = project.images;
       return `
       <article class="project-card">
-        <div class="project-meta">
-          <h3>${t(project.title)}</h3>
-          <p>${t(project.description)}</p>
-        </div>
-        <div class="project-gallery">
-          <img class="left" src="${mainImage}" alt="${t(project.title)}" loading="lazy" />
-          <div class="right">
-            <img src="${rightTop}" alt="${t(project.title)}" loading="lazy" />
-            <img src="${rightBottom}" alt="${t(project.title)}" loading="lazy" />
+        <div class="project-content">
+          <div class="project-gallery">
+            <img class="left" src="${mainImage}" alt="${t(project.title)}" loading="lazy" />
+            <div class="right">
+              <img src="${rightTop}" alt="${t(project.title)}" loading="lazy" />
+              <img src="${rightBottom}" alt="${t(project.title)}" loading="lazy" />
+            </div>
+          </div>
+          <div class="project-description">
+            <h3>${t(project.title)}</h3>
+            <div class="description-box">
+              <p>${t(project.description)}</p>
+            </div>
           </div>
         </div>
       </article>`;
